@@ -1,7 +1,7 @@
 # GitHub Actions Workflow Analysis
 
 ## What triggers this workflow to run?
-The workflow is run when code is pushed to the main branch or when a pull request is created targeting the main branch. 
+The workflow is run when code is pushed to the main branch or when a pull request is created targeting the main branch. This allows changes to be checked when they are pushed to the main branch before they are merged.
 ## What are the four main steps this workflow performs?
 The four main steps the workflow performs are:
 - Checkout Code: This retrieves the repository files so they can be accessed by the workflow.
@@ -13,6 +13,6 @@ The "Checkout code" step downloads the repository files and is necessary because
 ## What is the purpose of the environment configuration?
 The environment configuration identifies where the website will be deployed by setting the environment name to github-pages and provides the URL to the published website. 
 ## How does this automated deployment improve reliability compared to manual deployment?
-Automated deployment leads to improved reliability compared to manual deployment because it allows for systemic checks each time changes are pushed to the main branch. This reduces the chance that errors make it into the deployment phase and it makes the process more consistent because someone doesn't have to manually validate the HTML, check links, and prepare the website for deployment.
+Automated deployment leads to improved reliability compared to manual deployment because it allows for systemic checks each time changes are pushed to the main branch. This reduces the chance that errors make it into the deployment phase and it makes the process more consistent because someone doesn't have to manually validate the HTML, check links, and prepare the website for deployment. 
 ## What would happen if you pushed code to a different branch (not main)?
 If I had pushed code to a different branch other than the main branch, the workflow would not automatically run. This is because it is configured to only be triggered when someone tries to push changes to the main branch. 
